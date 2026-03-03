@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elección del Consejo Estudiantil</title>
+  <meta name="description" content="Sitio oficial de la elección del Consejo Estudiantil. Conoce a los candidatos, el cronograma y cómo emitir tu voto.">
+  <link rel="icon" href="assets/esfe-logo.png">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header role="banner">
+    <div class="container nav" aria-label="Barra de navegación principal">
+      <div class="brand" aria-label="Identidad institucional">
+        <div class="header-banner">
+          <img src="assets/mined.png" alt="MINED">
+          <img src="assets/AgapeLogo.jpg" alt="Ágape">
+          <img src="assets/ESFEblanco.png" alt="ESFE">
+        </div>
+      </div>
+      <nav class="nav__links" aria-label="Secciones">
+        <a href="#candidatos">Candidatos</a>
+        <a href="#cronograma">Cronograma</a>
+        <a href="#reglamento">Reglamento</a>
+        <a href="#como-votar">Cómo votar</a>        
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Presentación">
+    <div class="container hero__grid">
+      <div>
+        <div class="hero__badges">
+          <span class="badge" aria-label="Proceso democrático">Proceso democrático</span>
+          <span class="badge" aria-label="Transparencia y participación">Transparencia y participación</span>
+          <span class="badge" aria-label="Año lectivo">Año lectivo 2026</span>
+        </div>
+        <h2>Elección del Consejo Estudiantil</h2>
+        <h3>Construyamos juntos la representación estudiantil</h3>
+        <p class="section__lead">
+          Conoce las propuestas, revisa el cronograma, y emite tu voto de forma segura
+          mediante el formulario oficial de la institución.
+        </p>
+
+        <!-- Contador -->
+        <div aria-live="polite" aria-atomic="true">
+          <div class="countdown" id="countdown" role="group" aria-label="Cuenta regresiva a la elección">
+            <div class="count"><b id="d">--</b><span>días</span></div>
+            <div class="count"><b id="h">--</b><span>horas</span></div>
+            <div class="count"><b id="m">--</b><span>minutos</span></div>
+            <div class="count"><b id="s">--</b><span>segundos</span></div>
+          </div>
+        </div>
+
+        <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap">
+          <a class="btn btn--primary" href="https://forms.gle/Xv7mHnnf2pXEtcaU9" target="_blank" rel="noopener">Votar ahora</a>
+          <a class="btn btn--outline" href="#candidatos">Ver candidatos</a>
+        </div>
+      </div>
+
+      <!-- Imagen hero (genérica) -->
+      <div class="hero__img" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1200&auto=format&fit=crop" alt="Estudiantes participando en actividades escolares">
+      </div>
+    </div>
+  </section>
+
+  <!-- Candidatos -->
+  <section id="candidatos" class="container" aria-labelledby="titulo-candidatos">
+    <h2 class="section__title" id="titulo-candidatos">Candidatos</h2>
+    <p class="section__lead">Conoce a quienes aspiran a representar a la comunidad estudiantil. Haz clic en “Ver plan” para leer su propuesta resumida.</p>
+
+    <div class="cards">
+      <!-- Candidato 1 -->
+      <article class="card" aria-labelledby="cand1-nombre">
+        <div class="card__media">
+          <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=1200&auto=format&fit=crop" alt="Retrato de candidata">
+        </div>
+        <div class="card__body">
+          <span class="tag">Plan A</span>
+          <h3 id="cand1-nombre">María Fernanda López</h3>
+          <div class="meta">Bachillerato Académico • 2° año</div>
+          <ul class="list">
+            <li>Programa de tutorías entre pares</li>
+            <li>Campañas de bienestar y salud mental</li>
+            <li>Actividades culturales trimestrales</li>
+          </ul>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan1')" aria-controls="plan1" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan1" hidden>
+            <p style="margin-top:10px">Enfoque en acompañamiento académico, inclusión y espacios de expresión artística para toda la comunidad.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candidato 2 -->
+      <article class="card" aria-labelledby="cand2-nombre">
+        <div class="card__media">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop" alt="Retrato de candidato">
+        </div>
+        <div class="card__body">
+          <span class="tag" style="background:var(--success)">Plan B</span>
+          <h3 id="cand2-nombre">Carlos Andrés Mejía</h3>
+          <div class="meta">Técnico • 3° año</div>
+          <ul class="list">
+            <li>Fortalecimiento de clubes STEM</li>
+            <li>Participación en ferias y olimpíadas</li>
+            <li>Optimización de espacios de estudio</li>
+          </ul>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan2')" aria-controls="plan2" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan2" hidden>
+            <p style="margin-top:10px">Promueve proyectos científicos, mentorías y la gestión de recursos para equipamiento básico en laboratorios.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candidato 3 -->
+      <article class="card" aria-labelledby="cand3-nombre">
+        <div class="card__media">
+          <img src="https://images.unsplash.com/photo-1541233349642-6e425fe6190e?q=80&w=1200&auto=format&fit=crop" alt="Retrato de candidato">
+        </div>
+        <div class="card__body">
+          <span class="tag" style="background:var(--warning)">Plan C</span>
+          <h3 id="cand3-nombre">Sofía Martínez</h3>
+          <div class="meta">Bachillerato • 1° año</div>
+          <ul class="list">
+            <li>Eventos deportivos inclusivos</li>
+            <li>Campañas de reciclaje y eco-escuela</li>
+            <li>Mejoras en la comunicación estudiantil</li>
+          </ul>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan3')" aria-controls="plan3" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan3" hidden>
+            <p style="margin-top:10px">Impulsa la sostenibilidad, la actividad física y los canales de información claros y oportunos.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Cronograma -->
+  <section id="cronograma" class="container" aria-labelledby="titulo-cronograma">
+    <h2 class="section__title" id="titulo-cronograma">Cronograma</h2>
+    <p class="section__lead">Fechas clave del proceso electoral del Consejo Estudiantil.</p>
+
+    <div class="timeline" role="list">
+      <div class="tl-item" role="listitem">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-body">
+          <b>Inscripción de planchas</b>
+          <span class="meta">Del 01 al 05 de marzo</span>
+          <div>Recepción de acreditaciones y revisión de requisitos por la comisión electoral.</div>
+        </div>
+      </div>
+      <div class="tl-item" role="listitem">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-body">
+          <b>Campaña y presentación</b>
+          <span class="meta">Del 06 al 12 de marzo</span>
+          <div>Exposición de propuestas en aulas, redes oficiales y actividades institucionales.</div>
+        </div>
+      </div>
+      <div class="tl-item" role="listitem">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-body">
+          <b>Debate estudiantil</b>
+          <span class="meta">13 de marzo</span>
+          <div>Espacio moderado para preguntas abiertas y comparativo de planes.</div>
+        </div>
+      </div>
+      <div class="tl-item" role="listitem">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-body">
+          <b>Jornada de votación</b>
+          <span class="meta">15 de marzo</span>
+          <div>Votación a través de Google Forms (enlace oficial inferior).</div>
+        </div>
+      </div>
+      <div class="tl-item" role="listitem">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-body">
+          <b>Publicación de resultados</b>
+          <span class="meta">16 de marzo</span>
+          <div>Resultados publicados en esta página y en carteleras institucionales.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reglamento -->
+  <section id="reglamento" class="container" aria-labelledby="titulo-reglamento">
+    <h2 class="section__title" id="titulo-reglamento">Reglamento del proceso</h2>
+    <p class="section__lead">Resumen de lineamientos. El documento completo se encuentra disponible en Secretaría Académica.</p>
+
+    <div class="rules">
+      <div class="rule">
+        <h3>Participación</h3>
+        <p>Pueden votar los estudiantes matriculados y habilitados según el padrón oficial del año en curso.</p>
+      </div>
+      <div class="rule">
+        <h3>Campaña responsable</h3>
+        <p>Se prohíbe la desinformación y las prácticas que vulneren el respeto, la igualdad y la inclusión.</p>
+      </div>
+      <div class="rule">
+        <h3>Transparencia</h3>
+        <p>La comisión electoral supervisa la integridad del proceso y el resguardo de actas.</p>
+      </div>
+      <div class="rule">
+        <h3>Confidencialidad</h3>
+        <p>El voto es personal y secreto. Los datos en formularios se tratan con fines exclusivamente electorales.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cómo votar -->
+  <section id="como-votar" class="container" aria-labelledby="titulo-como-votar">
+    <h2 class="section__title" id="titulo-como-votar">Cómo votar</h2>
+    <div class="callout">
+      <ol class="list">
+        <li>Haz clic en <b>“Votar ahora”</b>. Se abrirá el formulario oficial de Google Forms.</li>
+        <li>Identifícate según las indicaciones del formulario (correo institucional, grado, sección, etc.).</li>
+        <li>Selecciona la opción de tu preferencia y envía tu voto.</li>
+      </ol>
+      <p class="section__lead" style="margin-top:8px">
+        Si tienes inconvenientes, comunícate con la <b>Comisión Electoral Estudiantil</b> o con la coordinación académica.
+      </p>
+      <div class="actions">
+        <a class="btn btn--primary" href="https://forms.gle/Xv7mHnnf2pXEtcaU9" target="_blank" rel="noopener">Votar ahora</a>
+        <a class="btn btn--outline" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'})">Volver arriba</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div><b>Escuela Superior Franciscana Especializada / Ágape</b> — Consejo Estudiantil</div>
+      <div>Contacto: asistencia.estudiantil@agape.edu.sv • Tel. (503) 2429-9731 | (503) 2429-9732</div>
+      <div style="margin-top:6px">© <span id="year"></span> Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // ====== Utilidad para desplegar/ocultar planes con accesibilidad ======
+    function togglePlan(id){
+      const el = document.getElementById(id);
+      const btn = event.currentTarget;
+      const visible = el.hasAttribute('hidden') ? false : true;
+      if(visible){ el.setAttribute('hidden',''); btn.setAttribute('aria-expanded','false'); }
+      else { el.removeAttribute('hidden'); btn.setAttribute('aria-expanded','true'); }
+    }
+
+    // ====== Año dinámico en el footer ======
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ====== Contador regresivo (ajusta la fecha/hora a tu jornada) ======
+    // Ejemplo: 15 de marzo de 2026 a las 08:00 hora local
+    const electionDate = new Date('2026-03-11T08:00:00'); // <-- CAMBIA ESTA FECHA
+    const dEl = document.getElementById('d');
+    const hEl = document.getElementById('h');
+    const mEl = document.getElementById('m');
+    const sEl = document.getElementById('s');
+
+    function updateCountdown(){
+      const now = new Date();
+      const diff = electionDate - now;
+      if(diff <= 0){
+        dEl.textContent = '0'; hEl.textContent='0'; mEl.textContent='0'; sEl.textContent='0';
+        return;
+      }
+      const sec = Math.floor(diff/1000);
+      const days = Math.floor(sec/86400);
+      const hours = Math.floor((sec%86400)/3600);
+      const mins = Math.floor((sec%3600)/60);
+      const secs = sec%60;
+      dEl.textContent = days;
+      hEl.textContent = String(hours).padStart(2,'0');
+      mEl.textContent = String(mins).padStart(2,'0');
+      sEl.textContent = String(secs).padStart(2,'0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // ====== Mejora: si el usuario viene del Form, podemos mostrar "¡Gracias!" ======
+    // (ej: enlazar de regreso con ?voto=ok)
+    const params = new URLSearchParams(location.search);
+    if(params.get('voto') === 'ok'){
+      alert('¡Gracias por participar en la elección del Consejo Estudiantil!');
+    }
+  </script>
+</body>
+</html>

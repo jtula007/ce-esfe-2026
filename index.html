@@ -74,73 +74,384 @@
 
     <div class="cards">
       <!-- Candidato 1 -->
-      <article class="card" aria-labelledby="cand1-nombre">
+      <article class="card" aria-labelledby="cand1-sandra-bran">
         <div class="card__media">
-          <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=1200&auto=format&fit=crop" alt="Retrato de candidata">
+          <img src="assets/postulantes/1-sandra-bran.jpg" alt="Retrato de candidata">
         </div>
         <div class="card__body">
-          <span class="tag">Plan A</span>
-          <h3 id="cand1-nombre">María Fernanda López</h3>
-          <div class="meta">Bachillerato Académico • 2° año</div>
-          <ul class="list">
-            <li>Programa de tutorías entre pares</li>
-            <li>Campañas de bienestar y salud mental</li>
-            <li>Actividades culturales trimestrales</li>
-          </ul>
+          <span class="tag" style="background:var(--success)">2° Turismo</span>
+          <h3 id="cand1-nombre">Sandra Concepción Pushagua Bran</h3>
           <div style="margin-top:12px">
             <button class="btn btn--outline" onclick="togglePlan('plan1')" aria-controls="plan1" aria-expanded="false">Ver plan</button>
           </div>
           <div id="plan1" hidden>
-            <p style="margin-top:10px">Enfoque en acompañamiento académico, inclusión y espacios de expresión artística para toda la comunidad.</p>
+            <p style="margin-top:10px">
+              Mi motivación principal es participar activamente en el desarrollo de la comunidad estudiantil, representando las ideas y necesidades 
+              de mis compañeros. Me interesa aportar iniciativas que promuevan el liderazgo, la participación y el trabajo en equipo dentro de 
+              ESFE/Agape. 
+            </p>
           </div>
         </div>
       </article>
 
       <!-- Candidato 2 -->
-      <article class="card" aria-labelledby="cand2-nombre">
+      <article class="card" aria-labelledby="cand2-carlos-mendoza">
         <div class="card__media">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop" alt="Retrato de candidato">
+          <img src="assets/postulantes/2-carlos-mendoza.jpg" alt="Retrato de candidato">
         </div>
         <div class="card__body">
-          <span class="tag" style="background:var(--success)">Plan B</span>
-          <h3 id="cand2-nombre">Carlos Andrés Mejía</h3>
-          <div class="meta">Técnico • 3° año</div>
-          <ul class="list">
-            <li>Fortalecimiento de clubes STEM</li>
-            <li>Participación en ferias y olimpíadas</li>
-            <li>Optimización de espacios de estudio</li>
-          </ul>
+          <span class="tag" style="background-color: var(--danger);">1° Eléctrica</span>
+          <h3 id="cand2-nombre">Carlos Hudini Mendoza Ayala</h3>          
           <div style="margin-top:12px">
             <button class="btn btn--outline" onclick="togglePlan('plan2')" aria-controls="plan2" aria-expanded="false">Ver plan</button>
           </div>
           <div id="plan2" hidden>
-            <p style="margin-top:10px">Promueve proyectos científicos, mentorías y la gestión de recursos para equipamiento básico en laboratorios.</p>
+            <p style="margin-top:10px">
+              Mi principal motivación nace del compromiso con mi comunidad educativa y contribuir al desarrollo de mis compañeros, considero y 
+              acepto participar de la mesa técnica de liderazgo y consejo estudiantil, poder ser un puente de comunicación entre la institución y 
+              compañeros. 
+            </p>
           </div>
         </div>
       </article>
 
       <!-- Candidato 3 -->
-      <article class="card" aria-labelledby="cand3-nombre">
+      <article class="card" aria-labelledby="cand3-valeria-vasquez">
         <div class="card__media">
-          <img src="https://images.unsplash.com/photo-1541233349642-6e425fe6190e?q=80&w=1200&auto=format&fit=crop" alt="Retrato de candidato">
+          <img src="assets/postulantes/3-valeria-vasquez.jpg" alt="Retrato de candidato">
         </div>
         <div class="card__body">
-          <span class="tag" style="background:var(--warning)">Plan C</span>
-          <h3 id="cand3-nombre">Sofía Martínez</h3>
-          <div class="meta">Bachillerato • 1° año</div>
-          <ul class="list">
-            <li>Eventos deportivos inclusivos</li>
-            <li>Campañas de reciclaje y eco-escuela</li>
-            <li>Mejoras en la comunicación estudiantil</li>
-          </ul>
+          <span class="tag" style="background:var(--warning)">2° Mercadeo</span>
+          <h3 id="cand3-nombre">Valeria Michell Vásquez Nájera</h3>
           <div style="margin-top:12px">
             <button class="btn btn--outline" onclick="togglePlan('plan3')" aria-controls="plan3" aria-expanded="false">Ver plan</button>
           </div>
           <div id="plan3" hidden>
-            <p style="margin-top:10px">Impulsa la sostenibilidad, la actividad física y los canales de información claros y oportunos.</p>
+            <p style="margin-top:10px">
+              Me motiva ser candidata por que me interesa representar las ideas y opiniones de mis compañeros y promover un ambiente mas unido, 
+              respetuoso y participativo entre los estudiantes. 
+            </p>
           </div>
         </div>
       </article>
+
+       <!-- Candidato 4 -->
+      <article class="card" aria-labelledby="cand4-jacquelin-perez">
+        <div class="card__media">
+          <img src="assets/postulantes/4-jacquelin-perez.jpg" alt="Retrato de candidato">
+        </div>
+        <div class="card__body">
+          <span class="tag" style="background:var(--warning)">2° Mercadeo</span>
+          <h3 id="cand3-nombre">Jacquelin Valeria Pérez Elías</h3>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan4')" aria-controls="plan4" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan4" hidden>
+            <p style="margin-top:10px">
+              Ser parte activa en la representación estudiantil para aportar ideas y trabajar en equipo en beneficio de la comunidad educativa. 
+              Deseo contribuir al fortalecimiento académico, cultural y social de la institución.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candidato 5 -->
+      <article class="card" aria-labelledby="cand5-josseline-alvarenga">
+        <div class="card__media">
+          <img src="assets/postulantes/5-josseline-alvarez.jpg" alt="Retrato de candidata">
+        </div>
+        <div class="card__body">
+          <span class="tag" style="background-color: var(--success);">2° Turismo</span>
+          <h3 id="cand5-nombre">Josseline Beatriz Álvarez Aragón</h3>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan5')" aria-controls="plan5" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan5" hidden>
+            <p style="margin-top:10px">
+              Mi motivación principal se centra en mi crecimiento integral. Busco profundizar mi conocimiento técnico más allá del aula, mientras 
+              desarrollo habilidades blandas.  
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candidato 6 -->
+      <article class="card" aria-labelledby="cand6-ashley-herrera">
+        <div class="card__media">
+          <img src="assets/postulantes/6-ashley-herrera.jpg" alt="Retrato de candidata">
+        </div>
+        <div class="card__body">
+          <span class="tag" style="background-color: var(--success);">2° Turismo</span>
+          <h3 id="cand6-nombre">Ashley Nicole Herrera Guevara</h3>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan6')" aria-controls="plan6" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan6" hidden>
+            <p style="margin-top:10px">
+              Proponer ideas que nos lleven a crecer, ser voz de mis compañeros y expresarme con esa actitud que cada líder debe tener.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candidato 7 -->
+      <article class="card" aria-labelledby="cand7-fatima-shul">
+        <div class="card__media">
+          <img src="assets/postulantes/7-fatima-shul.jpg" alt="Retrato de candidata">
+        </div>
+        <div class="card__body">
+          <span class="tag" style="background-color: var(--success);">1° Turismo</span>
+          <h3 id="cand7-nombre">Fátima Lizeth Shul Juárez</h3>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan7')" aria-controls="plan7" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan7" hidden>
+            <p style="margin-top:10px">
+              Apoyar a todos los estudiantes que sienten que no pueden alcanzar la meta de concluir sus estudios, apoyándolos a cumplir sus sueños 
+              y cada paso que den, será un peso menos ya que será un esfuerzo que todos hacemos.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candidato 8 -->
+      <article class="card" aria-labelledby="cand8-sandra-lopez">
+        <div class="card__media">
+          <img src="assets/postulantes/8-sandra-lopez.jpg" alt="Retrato de candidata">
+        </div>
+        <div class="card__body">
+          <span class="tag" style="background-color: var(--success);">1° Turismo</span>
+          <h3 id="cand8-nombre">Sandra Lisseth López López</h3>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan8')" aria-controls="plan8" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan8" hidden>
+            <p style="margin-top:10px">
+              Apoyar a los jóvenes con la toma de decisiones, velar por el cumplimiento de sus derechos e intereses y escuchar activamente cada 
+              idea de cada joven.  
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candidato 9 -->
+      <article class="card" aria-labelledby="cand9-katherine-lue">
+        <div class="card__media">
+          <img src="assets/postulantes/9-katherine-lue.jpg" alt="Retrato de candidata">
+        </div>
+        <div class="card__body">
+          <span class="tag">2° Desarrollo de Software</span>
+          <h3 id="cand9-nombre">Katherine Ileana Lúe Arana</h3>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan9')" aria-controls="plan9" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan9" hidden>
+            <p style="margin-top:10px">
+              Mi motivación es poder realizar ideas positivas, motivar a mis compañeros, trabajar como equipo, participar en actividades que me 
+              ayuden a poder ponerlas en práctica. 
+            </p>
+          </div>
+        </div>
+      </article>
+
+       <!-- Candidato 10 -->
+      <article class="card" aria-labelledby="cand10-jose-rios">
+        <div class="card__media">
+          <img src="assets/postulantes/10-jose-rios.jpg" alt="Retrato de candidato">
+        </div>
+        <div class="card__body">
+          <span class="tag" style="background-color: var(--success);">1° Turismo</span>
+          <h3 id="cand10-nombre">José Mauricio Ríos Mata</h3>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan10')" aria-controls="plan10" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan10" hidden>
+            <p style="margin-top:10px">
+              Apoyar a los jóvenes y brindar un apoyo, ayudar a que haya orden.
+            </p>
+          </div>
+        </div>
+      </article>
+
+       <!-- Candidato 11 -->
+      <article class="card" aria-labelledby="cand11-fatima-gonzalez">
+        <div class="card__media">
+          <img src="assets/postulantes/11-fatima-gonzalez.jpg" alt="Retrato de candidata">
+        </div>
+        <div class="card__body">
+          <span class="tag" style="background:var(--warning)">2° Mercadeo</span>
+          <h3 id="cand11-nombre">Fátima Isabel González Umaña</h3>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan11')" aria-controls="plan11" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan11" hidden>
+            <p style="margin-top:10px">
+              Poder aportar ideas que ayuden a tener un mejor ambiente académico y tener una buena comunicación entre docentes y estudiantes, 
+              promoviendo el respeto, responsabilidad, trabajo en equipo entre estudiantes. 
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candidato 12 -->
+      <article class="card" aria-labelledby="cand12-oscar-ramirez">
+        <div class="card__media">
+          <img src="assets/postulantes/12-oscar-ramirez.jpg" alt="Retrato de candidato">
+        </div>
+        <div class="card__body">
+          <span class="tag">2° Desarrollo de Software</span>
+          <h3 id="cand12-nombre">Oscar Andrés Ramírez Mendoza</h3>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan12')" aria-controls="plan12" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan12" hidden>
+            <p style="margin-top:10px">
+              Ser un canal de comunicación efectivo y trasparente entre estudiantes y directivos para así poder proponer soluciones creativas y 
+              efectivas a los desafíos que enfrentemos. 
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candidato 13 -->
+      <article class="card" aria-labelledby="cand13-william-hernandez">
+        <div class="card__media">
+          <img src="assets/no-photo.jpg" alt="Retrato de candidato">
+        </div>
+        <div class="card__body">
+          <span class="tag">1° Desarrollo de Software</span>
+          <h3 id="cand13-nombre">William Eduardo Hernández Sigüenza</h3>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan13')" aria-controls="plan13" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan13" hidden>
+            <p style="margin-top:10px">
+              Involucrarme activamente en los procesos estudiantiles dentro de la institución, para llevar las propuestas de mis compañeros a la mesa.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candidato 14 -->
+      <article class="card" aria-labelledby="cand14-bernardo-gomez">
+        <div class="card__media">
+          <img src="assets/no-photo.jpg" alt="Retrato de candidato">
+        </div>
+        <div class="card__body">
+          <span class="tag">1° Desarrollo de Software</span>
+          <h3 id="cand14-nombre">Bernardo Mordoqueo Gómez Pimentel</h3>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan14')" aria-controls="plan14" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan14" hidden>
+            <p style="margin-top:10px">
+              Ser un líder que escuche a los estudiantes, buscar soluciones a sus necesidades y promover proyectos que nos ayuden al crecimiento de 
+              la institución. 
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candidato 15 -->
+      <article class="card" aria-labelledby="cand15-delmy-sandoval">
+        <div class="card__media">
+          <img src="assets/no-photo.jpg" alt="Retrato de candidato">
+        </div>
+        <div class="card__body">
+          <span class="tag" style="background-color: var(--success);">1° Turismo</span>
+          <h3 id="cand15-nombre">Delmy Daniela Sandoval Santos</h3>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan15')" aria-controls="plan15" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan15" hidden>
+            <p style="margin-top:10px">
+              Ser portavoz de los jóvenes de mi institución, brindar ideas apoyando el bienestar de la misma, comprender y tratar problemas buscando 
+              soluciones alternativas, con el fin de ayudar. 
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candidato 16 -->
+      <article class="card" aria-labelledby="cand16-samuel-mendoza">
+        <div class="card__media">
+          <img src="assets/no-photo.jpg" alt="Retrato de candidato">
+        </div>
+        <div class="card__body">
+          <span class="tag">2° Desarrollo de Software</span>
+          <h3 id="cand16-nombre">Samuel Alonso Mendoza Calzadilla</h3>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan16')" aria-controls="plan16" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan16" hidden>
+            <p style="margin-top:10px">
+              Mi motivación es representar a mis compañeros de clase y contribuir a que nuestra comunidad estudiantil sea más integra y tener una 
+              voz más activa y escuchada. 
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candidato 17 -->
+      <article class="card" aria-labelledby="cand17-krisler-galicia">
+        <div class="card__media">
+          <img src="assets/no-photo.jpg" alt="Retrato de candidato">
+        </div>
+        <div class="card__body">
+          <span class="tag">2° Desarrollo de Software</span>
+          <h3 id="cand17-nombre">Krisler David Galicia Dueñas</h3>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan17')" aria-controls="plan17" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan17" hidden>
+            <p style="margin-top:10px">
+              Mi mayor motivación es la posibilidad de contribuir activamente en mejorar el ambiente académico y la comunicación entre nuestra 
+              comunidad.  
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candidato 18 -->
+      <article class="card" aria-labelledby="cand18-alfredo-martinez">
+        <div class="card__media">
+          <img src="assets/no-photo.jpg" alt="Retrato de candidato">
+        </div>
+        <div class="card__body">
+          <span class="tag">2° Desarrollo de Software</span>
+          <h3 id="cand18-nombre">Alfredo Alberto Martínez López</h3>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan18')" aria-controls="plan18" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan18" hidden>
+            <p style="margin-top:10px">
+              Contribuir a la mejora de nuestra comunidad educativa, impulsando propuestas que respondan a las necesidades reales de los estudiantes. 
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candidato 19 -->
+      <article class="card" aria-labelledby="cand19-maria-muñoz">
+        <div class="card__media">
+          <img src="assets/no-photo.jpg" alt="Retrato de candidato">
+        </div>
+        <div class="card__body">
+          <span class="tag" style="background-color: var(--danger);">1° Eléctrica</span>
+          <h3 id="cand19-nombre">María José Muñoz de Paz</h3>          
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan19')" aria-controls="plan19" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan19" hidden>
+            <p style="margin-top:10px">
+              Mi motivación personal es contribuir al desarrollo académico y profesional de mis compañeros, fomentando el trabajo en equipo, 
+              comunicación y liderazgo estudiantil, con el fin de fortalecer a la institución. 
+            </p>
+          </div>
+        </div>
+      </article>
+
+
     </div>
   </section>
 

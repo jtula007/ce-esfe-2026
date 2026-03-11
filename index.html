@@ -53,13 +53,13 @@
           </div>
         </div>
 
-        <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap">
+        <!--<div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap">
           <a class="btn" style="background-color: var(--success); color: #fff;" href="https://forms.gle/Xv7mHnnf2pXEtcaU9" target="_blank" rel="noopener">Votar Turismo</a>
           <a class="btn" style="background-color: var(--warning); color: #fff;" href="https://forms.gle/Xv7mHnnf2pXEtcaU9" target="_blank" rel="noopener">Votar Mercadeo</a>
           <a class="btn" style="background-color: var(--color-primario); color: #fff;" href="https://forms.gle/Xv7mHnnf2pXEtcaU9" target="_blank" rel="noopener">Votar Software</a>
           <a class="btn" style="background-color: var(--danger); color: #fff;" href="https://forms.gle/Xv7mHnnf2pXEtcaU9" target="_blank" rel="noopener">Votar Eléctrica</a>
-          <!--<a class="btn btn--outline" href="#candidatos">Ver candidatos</a>-->
-        </div>
+
+        </div>-->
       </div>
 
       <!-- Imagen hero (genérica) -->
@@ -222,10 +222,30 @@
       <!-- ***************************************** INICIA MERCADEO *********************************************** -->
       <H2>Técnico en Mercadeo</H2>
       <div class="cards">
+        <!-- Candidato 11 -->
+      <article class="card" aria-labelledby="cand11-fatima-gonzalez">
+        <div class="card__media">
+          <img src="assets/postulantes/11-fatima-gonzalez.jpg" alt="Retrato de candidata">
+        </div>
+        <div class="card__body">
+          <span class="tag" style="background:var(--warning)">1° Mercadeo</span>
+          <h3 id="cand11-nombre">Fátima Isabel González Umaña</h3>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan11')" aria-controls="plan11" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan11" hidden>
+            <p style="margin-top:10px">
+              Poder aportar ideas que ayuden a tener un mejor ambiente académico y tener una buena comunicación entre docentes y estudiantes, 
+              promoviendo el respeto, responsabilidad, trabajo en equipo entre estudiantes. 
+            </p>
+          </div>
+        </div>
+      </article>
+
         <!-- Candidato 20 -->
       <article class="card" aria-labelledby="cand20-michell-henriquez">
         <div class="card__media">
-          <img src="assets/no-photo.jpg" alt="Retrato de candidato">
+          <img src="assets/postulantes/20-michell-henriquez.jpeg" alt="Retrato de candidato">
         </div>
         <div class="card__body">
           <span class="tag" style="background:var(--warning)">1° Mercadeo</span>
@@ -237,6 +257,25 @@
             <p style="margin-top:10px">
               Aportar conocimientos e ideas para beneficio de la comunidad estudiantil y motivar la participación activa en el proceso, 
               además de aprender en diferentes áreas. 
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candidato 30 -->
+      <article class="card" aria-labelledby="cand30-isaac-tepas">
+        <div class="card__media">
+          <img src="assets/postulantes/30-isaac-tepas.jpeg" alt="Retrato de candidato">
+        </div>
+        <div class="card__body">
+          <span class="tag" style="background:var(--warning)">1° Mercadeo</span>
+          <h3 id="cand30-nombre">Isaac Elías Tepas Esquina</h3>
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan30')" aria-controls="plan30" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan30" hidden>
+            <p style="margin-top:10px">
+              Adquirir nuevos conocimientos en liderazgos de trabajo en equipo o en actividades sociales.
             </p>
           </div>
         </div>
@@ -280,27 +319,7 @@
             </p>
           </div>
         </div>
-      </article>
-
-       <!-- Candidato 11 -->
-      <article class="card" aria-labelledby="cand11-fatima-gonzalez">
-        <div class="card__media">
-          <img src="assets/postulantes/11-fatima-gonzalez.jpg" alt="Retrato de candidata">
-        </div>
-        <div class="card__body">
-          <span class="tag" style="background:var(--warning)">2° Mercadeo</span>
-          <h3 id="cand11-nombre">Fátima Isabel González Umaña</h3>
-          <div style="margin-top:12px">
-            <button class="btn btn--outline" onclick="togglePlan('plan11')" aria-controls="plan11" aria-expanded="false">Ver plan</button>
-          </div>
-          <div id="plan11" hidden>
-            <p style="margin-top:10px">
-              Poder aportar ideas que ayuden a tener un mejor ambiente académico y tener una buena comunicación entre docentes y estudiantes, 
-              promoviendo el respeto, responsabilidad, trabajo en equipo entre estudiantes. 
-            </p>
-          </div>
-        </div>
-      </article>
+      </article>       
 
       </div>
 
@@ -396,7 +415,7 @@
         </div>
         <div class="card__body">
           <span class="tag">2° Desarrollo de Software</span>
-          <h3 id="cand12-nombre">Oscar Andrés Ramírez Mendoza</h3>
+          <h3 id="cand12-nombre">Oscar Andrés Ramírez Romero</h3>
           <div style="margin-top:12px">
             <button class="btn btn--outline" onclick="togglePlan('plan12')" aria-controls="plan12" aria-expanded="false">Ver plan</button>
           </div>
@@ -555,6 +574,26 @@
         </div>
       </article>
 
+      <!-- Candidato 29 -->
+      <article class="card" aria-labelledby="cand29-walter-chilin">
+        <div class="card__media">
+          <img src="assets/no-photo.jpg" alt="Retrato de candidato">
+        </div>
+        <div class="card__body">
+          <span class="tag" style="background-color: var(--danger);">1° Eléctrica</span>
+          <h3 id="cand29-nombre">Walter Alejandro Chilín Rodríguez</h3>          
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan29')" aria-controls="plan29" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan29" hidden>
+            <p style="margin-top:10px">
+              Ser la voz de lo estudiantes, escuchar sus problemáticas, sugerencias o inquietudes. Proponer alternativas, que sumen a la 
+              correcta implementación y resolución de las mismas. 
+            </p>
+          </div>
+        </div>
+      </article>
+
       <!-- Candidato 22 -->
       <article class="card" aria-labelledby="cand22-jose-duenas">
         <div class="card__media">
@@ -635,6 +674,27 @@
         </div>
       </article>
 
+      <!-- Candidato 28 -->
+      <article class="card" aria-labelledby="cand28-cesar-torres">
+        <div class="card__media">
+          <img src="assets/postulantes/28-cesar-torres.jpg" alt="Retrato de candidato">
+        </div>
+        <div class="card__body">
+          <span class="tag" style="background-color: var(--danger);">2° Eléctrica</span>
+          <h3 id="cand28-nombre">César Marcelo Torres Reyes</h3>          
+          <div style="margin-top:12px">
+            <button class="btn btn--outline" onclick="togglePlan('plan28')" aria-controls="plan28" aria-expanded="false">Ver plan</button>
+          </div>
+          <div id="plan28" hidden>
+            <p style="margin-top:10px">
+              Atender y solucionar consultas, inquietudes del estudiantado de Eléctrica. Promover y fortalecer una política de igualdad 
+              hacia el genero femenino, mejorar y propiciar las condiciones que signifiquen una opción de avance para el desarrollo de la 
+              carrera.    
+            </p>
+          </div>
+        </div>
+      </article>
+
       </div>
       <!-- ***************************************** FINALIZA ELÉCTRICA *********************************************** -->
 
@@ -670,7 +730,7 @@
     <h2 class="section__title" id="titulo-como-votar">Cómo votar</h2>
     <div class="callout">
       <ol class="list">
-        <li>Haz clic en <b>“Votar ahora”</b>. Se abrirá el formulario oficial de Google Forms.</li>
+        <li>Haz doble clic al acceso directo en el escritorio del equipo asignado <b>“Votar ahora”</b>. Se abrirá el formulario oficial de Google Forms.</li>
         <li>Identifícate según las indicaciones del formulario (correo institucional).</li>
         <li>Selecciona la opción de tu preferencia y envía tu voto.</li>
       </ol>
@@ -678,10 +738,10 @@
         Si tienes inconvenientes, comunícate con la <b>Comisión Electoral Estudiantil</b> o con la coordinación académica.
       </p>
       <div class="actions">
-        <a class="btn" style="background-color: var(--success); color: #fff;" href="https://forms.gle/Xv7mHnnf2pXEtcaU9" target="_blank" rel="noopener">Votar Turismo</a>
+        <!--<a class="btn" style="background-color: var(--success); color: #fff;" href="https://forms.gle/Xv7mHnnf2pXEtcaU9" target="_blank" rel="noopener">Votar Turismo</a>
         <a class="btn" style="background-color: var(--warning); color: #fff;" href="https://forms.gle/Xv7mHnnf2pXEtcaU9" target="_blank" rel="noopener">Votar Mercadeo</a>
         <a class="btn" style="background-color: var(--color-primario); color: #fff;" href="https://forms.gle/Xv7mHnnf2pXEtcaU9" target="_blank" rel="noopener">Votar Software</a>
-        <a class="btn" style="background-color: var(--danger); color: #fff;" href="https://forms.gle/Xv7mHnnf2pXEtcaU9" target="_blank" rel="noopener">Votar Eléctrica</a>
+        <a class="btn" style="background-color: var(--danger); color: #fff;" href="https://forms.gle/Xv7mHnnf2pXEtcaU9" target="_blank" rel="noopener">Votar Eléctrica</a>-->
         <a class="btn btn--outline" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'})">Volver arriba</a>
       </div>
     </div>
@@ -712,7 +772,7 @@
 
     // ====== Contador regresivo (ajusta la fecha/hora a tu jornada) ======
     // Ejemplo: 15 de marzo de 2026 a las 08:00 hora local
-    const electionDate = new Date('2026-03-16T08:00:00'); // <-- CAMBIA ESTA FECHA
+    const electionDate = new Date('2026-03-17T08:00:00'); // <-- CAMBIA ESTA FECHA
     const dEl = document.getElementById('d');
     const hEl = document.getElementById('h');
     const mEl = document.getElementById('m');
